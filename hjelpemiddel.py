@@ -26,7 +26,6 @@ def akv_finn_sist_oppdatert(tabell):
             if row:
                 logging.debug(f"{tabell} er sist oppdatert (Azure): {row[0].isoformat() + 'Z'}")
                 return row[0].isoformat() + "Z"
-            
     except pyodbc.Error as exc:
         logging.debug(f"{tabell} er sist oppdatert (lokal): {(date.today() - timedelta(days=1)).isoformat() + 'Z'}") 
         return (date.today() - timedelta(days=1)).isoformat() + "Z"
@@ -155,8 +154,10 @@ def akv_les_CD2_tabell(tabell):
     CD2_access_token = akv_hent_CD2_access_token()
     headers = {'x-instauth': CD2_access_token, 'Content-Type': 'text/plain'}
     sist_oppdatert = akv_finn_sist_oppdatert(tabell)
-    print(f"Sist oppdatert: {sist_oppdatert}")
-    payload = '{"format": "csv", "since": \"%s\"}' % (sist_oppdatert)
+    if sist_oppdatert == None:
+        payload = "{\"format\":\"csv\"}"
+    else:
+        payload = '{"format": "csv", "since": \"%s\"}' % (sist_oppdatert)
     requesturl = f"{CD2_base_url}/dap/query/canvas/table/{tabell}/data"
     print(f"Sender søk til {requesturl}")
     try:
@@ -181,7 +182,11 @@ def akv_les_CD2_tabell(tabell):
             df = pd.read_csv(data, sep=",")
             dr_liste.append(df)
         alledata = pd.concat(df for df in dr_liste if not df.empty)
-        return alledata, sist_oppdatert, respons2['until']
+        if sist_oppdatert == None:
+            denne_oppdateringa = respons2['at']
+        else:
+            denne_oppdateringa = respons2['until']
+        return alledata, sist_oppdatert, denne_oppdateringa
     except requests.exceptions.RequestException as exc:
         raise exc
     
