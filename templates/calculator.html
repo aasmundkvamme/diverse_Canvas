@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="number"] {
+            width: 200px;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        select {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-radius: 4px;
+        }
+        .memory {
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="num1">First Number:</label><br>
+                <input type="number" step="any" name="num1" id="num1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="num2">Second Number:</label><br>
+                <input type="number" step="any" name="num2" id="num2">
+            </div>
+            
+            <div class="form-group">
+                <label for="operation">Operation:</label><br>
+                <select name="operation" id="operation">
+                    <option value="add">Add (+)</option>
+                    <option value="subtract">Subtract (-)</option>
+                    <option value="multiply">Multiply (×)</option>
+                    <option value="divide">Divide (÷)</option>
+                    <option value="memory_store">Store in Memory</option>
+                    <option value="memory_recall">Recall from Memory</option>
+                </select>
+            </div>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        
+        {% if result %}
+        <div class="result">
+            <strong>Result:</strong> {{ result }}
+        </div>
+        {% endif %}
+        
+        <div class="memory">
+            <strong>Memory:</strong> {{ memory }}
+        </div>
+    </div>
+</body>
+</html>
