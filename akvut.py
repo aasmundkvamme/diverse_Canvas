@@ -166,7 +166,7 @@ def send_epost(tittel, innhald, avsender, mottakarar, vedlegg):
         smtp_server.quit()
 
 
-def akv_query_FS_graphql(query, variable):
+def query_FS_graphql(query, variable):
     hode = {
         'Accept': 'application/json;version=1',
         'Authorization': f'Basic {FSpålogging_kode}',
@@ -186,7 +186,7 @@ def akv_query_FS_graphql(query, variable):
         return {}
 
 
-def akv_query_canvas_graphql(query, variable):
+def query_canvas_graphql(query, variable):
     """
     Send a GraphQL query to Canvas and return the response.
 
@@ -215,68 +215,78 @@ def akv_query_canvas_graphql(query, variable):
         raise Exception(f"Feil i spørjing med kode {svar.status_code}. {query}")
 
 
-def akv_finn_sist_oppdatert(tabell):
+def finn_sist_oppdatert(tabell):
     """
     Return the latest update time for the given table from the akv_sist_oppdatert table.
     """
-    with pyodbc.connect(conn_str) as connection:
-        cursor = connection.cursor()
-        print(connection)
-        try:
-            query = """
-            SELECT [sist_oppdatert] FROM [dbo].[akv_sist_oppdatert]
-            WHERE [tabell] = ?
-            """
-            cursor.execute(query, (tabell,))
-            row = cursor.fetchone()
-            print(row)
-            if row:
-                print("Har henta frå Azure")
-                if tabell == "web_logs":
-                    return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
+    try:
+        with pyodbc.connect(conn_str) as connection:
+            cursor = connection.cursor()
+            print(connection)
+            try:
+                query = """
+                SELECT [sist_oppdatert] FROM [dbo].[akv_sist_oppdatert]
+                WHERE [tabell] = ?
+                """
+                cursor.execute(query, (tabell,))
+                row = cursor.fetchone()
+                print(row)
+                if row:
+                    print("Har henta frå Azure")
+                    if tabell == "web_logs":
+                        return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
+                    else:
+                        return row[0].isoformat() + "Z"
                 else:
-                    return row[0].isoformat() + "Z"
-            else:
+                    print("Har ikkje henta frå Azure")
+                    if tabell == "web_logs":
+                        return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
+                    else:
+                        return (date.today() - timedelta(days=1)).isoformat() + "Z"
+            except pyodbc.Error as exc:
                 print("Har ikkje henta frå Azure")
                 if tabell == "web_logs":
                     return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
                 else:
                     return (date.today() - timedelta(days=1)).isoformat() + "Z"
-        except pyodbc.Error as exc:
-            print("Har ikkje henta frå Azure")
-            if tabell == "web_logs":
-                return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
-            else:
-                return (datetime.today() - timedelta(days=1)).isoformat() + "Z"
+    except pyodbc.Error as exc:
+        print("Har ikkje henta frå Azure")
+        if tabell == "web_logs":
+            return (datetime.now() - timedelta(days=1)).isoformat() + "Z"
+        else:
+            return (datetime.today() - timedelta(days=1)).isoformat() + "Z"
 
 
-def akv_skriv_sist_oppdatert(tabell, sist_oppdatert):
-    with pyodbc.connect(conn_str) as conn:
-        cursor = conn.cursor()
-        try:
-            query = """
-            MERGE INTO [dbo].[akv_sist_oppdatert] AS target 
-            USING (VALUES (?, ?)) AS source (tabell, sist_oppdatert) 
-            ON target.[tabell] = source.[tabell]
-            WHEN MATCHED THEN
-                UPDATE SET target.[sist_oppdatert] = source.[sist_oppdatert]
-            WHEN NOT MATCHED THEN
-                INSERT ([tabell], [sist_oppdatert]) VALUES (source.[tabell], source.[sist_oppdatert]);
-            """ 
-            print(f"tabell: {tabell}, sist_oppdatert: {sist_oppdatert}")
-            cursor.execute(query, (tabell, sist_oppdatert))
-            conn.commit()
-        except pyodbc.Error as e:
-            print(f"Feil ved opplasting av sist oppdatert: {e}")
+def skriv_sist_oppdatert(tabell, sist_oppdatert):
+    try:
+        with pyodbc.connect(conn_str) as conn:
+            cursor = conn.cursor()
+            try:
+                query = """
+                MERGE INTO [dbo].[akv_sist_oppdatert] AS target 
+                USING (VALUES (?, ?)) AS source (tabell, sist_oppdatert) 
+                ON target.[tabell] = source.[tabell]
+                WHEN MATCHED THEN
+                    UPDATE SET target.[sist_oppdatert] = source.[sist_oppdatert]
+                WHEN NOT MATCHED THEN
+                    INSERT ([tabell], [sist_oppdatert]) VALUES (source.[tabell], source.[sist_oppdatert]);
+                """ 
+                print(f"tabell: {tabell}, sist_oppdatert: {sist_oppdatert}")
+                cursor.execute(query, (tabell, sist_oppdatert))
+                conn.commit()
+            except pyodbc.Error as e:
+                print(f"Feil ved opplasting av sist oppdatert: {e}")
+    except pyodbc.Error as e:
+        print(f"Feil ved opplasting av sist oppdatert: {e}")
 
 
-def akv_les_web_logs(logger):
+def les_web_logs(logger):
     # Hent access_token
     access_token = les_access_token(logger)
 
     if access_token is not None:  
         # Les tidspunkt for forrige oppdatering
-        sist_oppdatert = akv_finn_sist_oppdatert("web_logs")
+        sist_oppdatert = finn_sist_oppdatert("web_logs")
 
         # Hent oppdateringane
         start_sjekk_status = time.perf_counter()
@@ -324,7 +334,7 @@ def akv_les_web_logs(logger):
         logger.info(f"Totalt for hent_filar: {tidsbruk_hent_filar}")
         # logging.info(f"web_logs er {web_logs.info()}")
         # Skriv tidspunkt for siste oppdatering til fil
-        akv_skriv_sist_oppdatert("web_logs", respons2['until'])
+        skriv_sist_oppdatert("web_logs", respons2['until'])
         return web_logs
 
     else:
