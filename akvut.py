@@ -23,8 +23,8 @@ CD2_client_secret = os.environ['CD2_client_secret']
 conn_str = os.environ["Connection_SQL"] 
 FSbrukar = os.environ["FSbrukar"]
 FSpassord = os.environ["FSpassord"]
-FSpålogging = f"{FSbrukar}:{FSpassord}"
-FSpålogging_kode = base64.b64encode(FSpålogging.encode('utf-8')).decode('utf-8')
+# FSpålogging = f"{FSbrukar}:{FSpassord}"
+# FSpålogging_kode = base64.b64encode(FSpålogging.encode('utf-8')).decode('utf-8')
 
 
 def test():
@@ -169,7 +169,6 @@ def send_epost(tittel, innhald, avsender, mottakarar, vedlegg):
 def query_FS_graphql(query, variable):
     hode = {
         'Accept': 'application/json;version=1',
-        'Authorization': f'Basic {FSpålogging_kode}',
         "Feature-Flags": "beta, experimental"
     }
     GraphQLurl = "https://api.fellesstudentsystem.no/graphql/"
@@ -179,7 +178,8 @@ def query_FS_graphql(query, variable):
             'query': query,
             'variables': variable
         },
-        headers=hode)
+        headers=hode,
+        auth=(FSbrukar, FSpassord))
     if 200 <= svar.status_code < 300:
         return svar.json()
     else:
