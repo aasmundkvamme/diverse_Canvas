@@ -40,10 +40,9 @@ def query_FS_graphql(query, variable):
 
 
 def finn_emnekode(streng):
-    if streng.startswith("UA") or streng.startswith("UE"):
+    if streng.startswith(("UA", "UE")):
         return streng.split('_')[2]
-    else:
-        return None
+    return None
 
 
 def sjekk_aktiv(rekke):
