@@ -1,0 +1,3 @@
+[tool.ariadne-codegen]
+queries_path = "queries.graphql"
+remote_schema_url = "https://api.fellesstudentsystem.no/graphql/"

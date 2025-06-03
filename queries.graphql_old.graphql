@@ -1,0 +1,9 @@
+mutation CreateToken($username: String!, $password: String!) {
+  createToken(username: $username, password: $password) {
+    token
+    errors {
+      field
+      message
+    }
+  }
+}
