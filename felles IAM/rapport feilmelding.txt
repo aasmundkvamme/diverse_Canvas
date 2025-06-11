@@ -1,0 +1,167 @@
+Ulike feilmeldingar:
+
+1. Unable to delete user
+2. Essential data missing for undefined.
+3. Unable to create user account
+4. Unable to change user login_id
+5. Unable to add admin - missing data if false: AccountID: true | CanvasID: false | RoleID: true
+6. Too many user accounts returned
+7. Unable to post user to Canvas
+8. Unable to update user account
+
+
+1. Unable to delete user
+394: 2025/06/11 10:04:34.158: INFO Processing: 1194a6a5-5c77-4303-a8f7-54cf007335ce | Kjetil Hågenvik
+6012: 2025/06/11 10:12:59.085: INFO Processing: f52ff305-22f6-4e43-aedc-127921b49cfc | Asle Morten Karlsen
+6068: 2025/06/11 10:13:00.179: INFO Processing: a2eabe7e-1d04-49a3-9846-727f16cbd6d1 | Nils Roar Selnes
+6124: 2025/06/11 10:13:01.291: INFO Processing: 9411ea58-016b-4099-af64-823977421b8c | Koen Pieter Dijkstra
+6180: 2025/06/11 10:13:02.351: INFO Processing: 9ed05f25-9e44-4dcc-bde8-2aa55d91e829 | Peter Leopold
+6236: 2025/06/11 10:13:03.475: INFO Processing: b6a374de-03e4-4c98-b04a-53b79dbf5c84 | Bjørn Hugo Pedersen
+6292: 2025/06/11 10:13:04.540: INFO Processing: efa089a1-3b71-4309-ac05-b25ac3bb1ec3 | Arild Stenmo Tobiassen
+6348: 2025/06/11 10:13:05.636: INFO Processing: 0ed46f6b-dfe3-47aa-9b52-40c10f32b016 | Olav Skjalgson Andreassen
+6404: 2025/06/11 10:13:06.749: INFO Processing: 1131629e-1614-411b-b13d-33481b437915 | Steinar Eilertsen
+6460: 2025/06/11 10:13:07.742: INFO Processing: b9ff4725-735b-4980-a519-ee65ce2f7b85 | Bjørn Konrad Stenvold
+6516: 2025/06/11 10:13:08.787: INFO Processing: ea819455-701d-4111-808c-2f6907506ce3 | Haakon Hop
+6586: 2025/06/11 10:13:11.787: INFO Processing: e60c6734-a876-4921-b905-17539f0ca1fe | Robert Vang
+6645: 2025/06/11 10:13:13.417: INFO Processing: a3d7d809-ead2-43f8-aaed-371b3892dba0 | Ole Gunnar Tinghaug
+6701: 2025/06/11 10:13:14.479: INFO Processing: 496646d1-843a-466c-9e30-2100a35ec159 | Trygve Nicolay Syvertsen
+6757: 2025/06/11 10:13:15.626: INFO Processing: 36d75f84-d9d0-4e0d-b9da-23a9f6c5fa8e | Kim Andre Bekk
+6813: 2025/06/11 10:13:16.674: INFO Processing: 4c20ac92-0ecc-4a4d-b811-4d258fbe2b41 | Kenneth Hvål
+6869: 2025/06/11 10:13:17.750: INFO Processing: 536d72dd-90e8-42bd-a137-e8c1b93a90c6 | Alexander Williams
+6925: 2025/06/11 10:13:18.851: INFO Processing: 632fd616-f26e-4645-a3db-0648525b735f | Gisle Tombre
+6981: 2025/06/11 10:13:19.876: INFO Processing: e2c91890-51ef-4acb-a608-4657f83c5e0d | Atle Tveitan Evensen
+7037: 2025/06/11 10:13:20.950: INFO Processing: e3962e7f-4102-4f80-8599-5a75dcd75473 | Henning Jacobsen
+7093: 2025/06/11 10:13:22.010: INFO Processing: e8611b50-699c-4484-9955-a5a4d14077ec | Sven-Tore Flottorp
+7149: 2025/06/11 10:13:23.183: INFO Processing: 168a82c0-578d-4258-9606-b6c2f8b74651 | Stian Haglind Bakke
+7205: 2025/06/11 10:13:24.250: INFO Processing: 24c32f80-96e9-453f-9c32-186d6548b1e4 | Hans Ulrik Rustad
+7261: 2025/06/11 10:13:25.391: INFO Processing: 4e10c736-3662-4ad1-995a-c383657b8dd4 | Alexander Theie Mol
+7317: 2025/06/11 10:13:26.434: INFO Processing: aca660b7-062f-41c7-8cde-b0c2fff099cb | Morten Bjørningstad Kristoffersen
+7373: 2025/06/11 10:13:27.624: INFO Processing: bf7f6af6-b132-4ee1-8295-17a7ca5ae7d7 | Trond Vidar Bjerkholt
+7429: 2025/06/11 10:13:28.859: INFO Processing: ecc785dd-5715-404d-bc70-700259a98a49 | Tom Halvor Gjærum
+8360: 2025/06/11 10:13:57.568: INFO Processing: 71d281e8-b3f9-4f25-bbaa-f2d3e46572cb | Shahrzad Shahrokh
+8416: 2025/06/11 10:13:58.726: INFO Processing: a4f58b34-83e3-4b36-a83a-922f940931d2 | Dikshya Regmi
+8472: 2025/06/11 10:13:59.787: INFO Processing: e2c543f6-3e54-4a25-ae7c-8de83834745a | Donya Agha Jamali
+8528: 2025/06/11 10:14:00.972: INFO Processing: f070cd37-7ea0-4e73-a1af-a7aebf6a19dc | Omid Tajamiri Rostami
+8584: 2025/06/11 10:14:02.115: INFO Processing: 08cf018b-7aa3-4fc3-98ce-8dbada9ce129 | Joanna Daria Szymczak
+
+2. Essential data missing for undefined.
+367: 2025/06/11 10:04:34.158: INFO Processing: 1194a6a5-5c77-4303-a8f7-54cf007335ce | Kjetil Hågenvik
+5985: 2025/06/11 10:12:59.085: INFO Processing: f52ff305-22f6-4e43-aedc-127921b49cfc | Asle Morten Karlsen
+6041: 2025/06/11 10:13:00.179: INFO Processing: a2eabe7e-1d04-49a3-9846-727f16cbd6d1 | Nils Roar Selnes
+6097: 2025/06/11 10:13:01.291: INFO Processing: 9411ea58-016b-4099-af64-823977421b8c | Koen Pieter Dijkstra
+6153: 2025/06/11 10:13:02.351: INFO Processing: 9ed05f25-9e44-4dcc-bde8-2aa55d91e829 | Peter Leopold
+6209: 2025/06/11 10:13:03.475: INFO Processing: b6a374de-03e4-4c98-b04a-53b79dbf5c84 | Bjørn Hugo Pedersen
+6265: 2025/06/11 10:13:04.540: INFO Processing: efa089a1-3b71-4309-ac05-b25ac3bb1ec3 | Arild Stenmo Tobiassen
+6321: 2025/06/11 10:13:05.636: INFO Processing: 0ed46f6b-dfe3-47aa-9b52-40c10f32b016 | Olav Skjalgson Andreassen
+6377: 2025/06/11 10:13:06.749: INFO Processing: 1131629e-1614-411b-b13d-33481b437915 | Steinar Eilertsen
+6433: 2025/06/11 10:13:07.742: INFO Processing: b9ff4725-735b-4980-a519-ee65ce2f7b85 | Bjørn Konrad Stenvold
+6489: 2025/06/11 10:13:08.787: INFO Processing: ea819455-701d-4111-808c-2f6907506ce3 | Haakon Hop
+6559: 2025/06/11 10:13:11.787: INFO Processing: e60c6734-a876-4921-b905-17539f0ca1fe | Robert Vang
+6618: 2025/06/11 10:13:13.417: INFO Processing: a3d7d809-ead2-43f8-aaed-371b3892dba0 | Ole Gunnar Tinghaug
+6674: 2025/06/11 10:13:14.479: INFO Processing: 496646d1-843a-466c-9e30-2100a35ec159 | Trygve Nicolay Syvertsen
+6730: 2025/06/11 10:13:15.626: INFO Processing: 36d75f84-d9d0-4e0d-b9da-23a9f6c5fa8e | Kim Andre Bekk
+6786: 2025/06/11 10:13:16.674: INFO Processing: 4c20ac92-0ecc-4a4d-b811-4d258fbe2b41 | Kenneth Hvål
+6842: 2025/06/11 10:13:17.750: INFO Processing: 536d72dd-90e8-42bd-a137-e8c1b93a90c6 | Alexander Williams
+6898: 2025/06/11 10:13:18.851: INFO Processing: 632fd616-f26e-4645-a3db-0648525b735f | Gisle Tombre
+6954: 2025/06/11 10:13:19.876: INFO Processing: e2c91890-51ef-4acb-a608-4657f83c5e0d | Atle Tveitan Evensen
+7010: 2025/06/11 10:13:20.950: INFO Processing: e3962e7f-4102-4f80-8599-5a75dcd75473 | Henning Jacobsen
+7066: 2025/06/11 10:13:22.010: INFO Processing: e8611b50-699c-4484-9955-a5a4d14077ec | Sven-Tore Flottorp
+7122: 2025/06/11 10:13:23.183: INFO Processing: 168a82c0-578d-4258-9606-b6c2f8b74651 | Stian Haglind Bakke
+7178: 2025/06/11 10:13:24.250: INFO Processing: 24c32f80-96e9-453f-9c32-186d6548b1e4 | Hans Ulrik Rustad
+7234: 2025/06/11 10:13:25.391: INFO Processing: 4e10c736-3662-4ad1-995a-c383657b8dd4 | Alexander Theie Mol
+7290: 2025/06/11 10:13:26.434: INFO Processing: aca660b7-062f-41c7-8cde-b0c2fff099cb | Morten Bjørningstad Kristoffersen
+7346: 2025/06/11 10:13:27.624: INFO Processing: bf7f6af6-b132-4ee1-8295-17a7ca5ae7d7 | Trond Vidar Bjerkholt
+7402: 2025/06/11 10:13:28.859: INFO Processing: ecc785dd-5715-404d-bc70-700259a98a49 | Tom Halvor Gjærum
+8333: 2025/06/11 10:13:57.568: INFO Processing: 71d281e8-b3f9-4f25-bbaa-f2d3e46572cb | Shahrzad Shahrokh
+8389: 2025/06/11 10:13:58.726: INFO Processing: a4f58b34-83e3-4b36-a83a-922f940931d2 | Dikshya Regmi
+8445: 2025/06/11 10:13:59.787: INFO Processing: e2c543f6-3e54-4a25-ae7c-8de83834745a | Donya Agha Jamali
+8501: 2025/06/11 10:14:00.972: INFO Processing: f070cd37-7ea0-4e73-a1af-a7aebf6a19dc | Omid Tajamiri Rostami
+8557: 2025/06/11 10:14:02.115: INFO Processing: 08cf018b-7aa3-4fc3-98ce-8dbada9ce129 | Joanna Daria Szymczak
+
+3. Unable to create user account
+926: 2025/06/11 10:05:37.733: INFO Processing: 4dea5a8b-be1d-4999-ae6a-e2c35e2703ac | Bente Mjøen Larssen
+1569: 2025/06/11 10:07:25.868: INFO Processing: fa572e6c-310a-46d8-af3f-d16ed568c861 | Hans Jørgen Timm Guthe
+1897: 2025/06/11 10:07:56.433: INFO Processing: 98422ca9-dc8e-49a8-a594-254ca2f2e07b | Cecilie Hjortland Skare
+2089: 2025/06/11 10:08:09.684: INFO Processing: e111dd0a-8fa3-4e90-b8a2-9ec63f9aac3b | Irene Instenes
+2226: 2025/06/11 10:08:14.192: INFO Processing: f1e612a9-2f6d-4c35-bec6-ffe33467411c | Jannicke Igland
+2656: 2025/06/11 10:09:02.640: INFO Processing: 0e317c80-57a7-4bcd-9f4a-9bc916a3f582 | Therese Ersvær Sjursæther
+2938: 2025/06/11 10:09:25.584: INFO Processing: 9b29de76-9c22-4ed0-b790-19ded47e2a04 | Padmaja Barua
+3193: 2025/06/11 10:09:48.282: INFO Processing: 2ac87459-76cb-4b16-9344-e201e0f60601 | Kelvin Wade Ivankovic
+3434: 2025/06/11 10:10:05.619: INFO Processing: 92500648-8fe4-4b32-a608-1eb0b8eb3836 | Igor Slazyk
+4138: 2025/06/11 10:11:15.172: INFO Processing: 8fda1a4c-dad5-405d-b6ef-9fea539848be | Arild Skarsfjord Berg
+4360: 2025/06/11 10:11:25.077: INFO Processing: d26fadb1-777e-4025-98e3-ba4fe8bed637 | Marte Handal
+4503: 2025/06/11 10:11:30.721: INFO Processing: f7b7320f-b49d-4a83-8089-a08c2cf3d98e | Morten Rosenfeldt
+4655: 2025/06/11 10:11:37.663: INFO Processing: 8849bcae-6383-4dc4-9b6f-4f9828073ccd | Ann Hege Lorvik Waterhouse
+4807: 2025/06/11 10:11:45.436: INFO Processing: ff1dc62b-a530-4757-8e08-27cac25827e9 | Gloria Abena Ampim
+5048: 2025/06/11 10:12:04.169: INFO Processing: 9b00ea37-de02-4d91-b4ef-ac8f552d2469 | Anette Hjartåker
+5185: 2025/06/11 10:12:10.426: INFO Processing: e194f146-959c-496b-a0e5-5b3aefd70f5f | Tor Georg Jakobsen
+5307: 2025/06/11 10:12:12.464: INFO Processing: 14b527eb-d107-446b-813f-75d29613a7f8 | Joshua Tetteh Ocansey
+5607: 2025/06/11 10:12:32.636: INFO Processing: b1ea65fa-3f80-4b60-adb3-82c38877a5fc | Erik Laurens Jansen
+5924: 2025/06/11 10:12:56.812: INFO Processing: 728a9b62-335f-44fe-92e6-aa7086e1d507 | Ingrid Selnes Arholm
+7722: 2025/06/11 10:13:39.163: INFO Processing: 92d69c7e-5b1d-4d62-91a7-5d88f5edd7e3 | Andrew Athan Mcaleavey
+9103: 2025/06/11 10:14:14.747: INFO Processing: 67a8b8f3-cfa1-45dc-b211-5c4f5059c356 | Leiv Opstad
+11140: 2025/06/11 10:15:08.226: INFO Processing: 37932615-2f95-474d-b15c-58f46b4be200 | Bente Landa Martinsen
+17744: 2025/06/11 10:18:20.727: INFO Processing: 0ce4e8a6-94fa-4d39-8105-40909d09081a | Simon Sanca
+18299: 2025/06/11 10:18:34.450: INFO Processing: 68c96cc0-f88c-4d24-a0c7-a27e0e2ff46e | Monica Jakobsen Strand
+
+4. Unable to change user login_id
+172: 2025/06/11 10:04:02.731: ERROR Cannot determine login_id for user 25791
+603: 2025/06/11 10:05:07.306: ERROR Cannot determine login_id for user 29097
+2445: 2025/06/11 10:08:46.030: ERROR Cannot determine login_id for user 27610
+2800: 2025/06/11 10:09:21.836: ERROR Cannot determine login_id for user 41482
+3253: 2025/06/11 10:09:56.865: INFO Canvas user_id 54469 has login_id 54816
+3990: 2025/06/11 10:11:11.742: INFO Canvas user_id 76381 has login_id 76793
+4218: 2025/06/11 10:11:20.850: ERROR Cannot determine login_id for user 107464
+9438: 2025/06/11 10:14:22.630: ERROR Cannot determine login_id for user 41361
+9741: 2025/06/11 10:14:31.808: ERROR Cannot determine login_id for user 4953
+10582: 2025/06/11 10:14:53.768: ERROR Cannot determine login_id for user 4960
+11502: 2025/06/11 10:15:20.156: ERROR Cannot determine login_id for user 4059
+15404: 2025/06/11 10:17:15.306: ERROR Cannot determine login_id for user 37787
+15538: 2025/06/11 10:17:20.810: ERROR Cannot determine login_id for user 5153
+18825: 2025/06/11 10:18:52.962: ERROR Cannot determine login_id for user 24967
+21680: 2025/06/11 10:20:12.482: ERROR Cannot determine login_id for user 78109
+21908: 2025/06/11 10:20:21.328: ERROR Cannot determine login_id for user 9945
+24488: 2025/06/11 10:21:16.955: ERROR Cannot determine login_id for user 1903
+35037: 2025/06/11 10:24:29.098: ERROR Cannot determine login_id for user 47951
+42097: 2025/06/11 10:26:39.024: ERROR Cannot determine login_id for user 23029
+
+5. Unable to add admin - missing data if false: AccountID: true | CanvasID: false | RoleID: true
+1414: 2025/06/11 10:07:19.159: INFO Processing: d1db14ab-478b-4fd2-b55a-0569afb72e69 | Helge Olsen
+3538: 2025/06/11 10:10:16.940: INFO Processing: de90895f-2e05-4bf8-a57a-cf7d162b0a57 | Ingvild Blanceflor Hvidsten
+3580: 2025/06/11 10:10:19.443: INFO Processing: fe2a5f1c-efc5-4638-b559-45983ea94f7d | Maia Vatlestad
+3795: 2025/06/11 10:10:47.195: INFO Processing: 9d9171c9-fe2a-457c-bd31-730d092a6c78 | Maria Lefdal Jenssen
+4926: 2025/06/11 10:12:02.157: INFO Processing: 89edc0ad-fe02-4951-8d00-eaf396003716 | Martin Mo
+
+6. Too many user accounts returned
+684: 2025/06/11 10:05:16.003: INFO Processing: d12074bd-8e4b-4c22-baa6-ba0d591dceff | Jan Erik Ølmheim
+
+7. Unable to post user to Canvas
+900: "error": "Unable to post user to Canvas: {communication_channel={address=bente.mjoen.larssen@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:5325, unique_id=bml@hvl.no}, user={email=bente.mjoen.larssen@hvl.no, name=Bente Mjøen Larssen, short_name=Bente Mjøen Larssen, skip_registration=true, sortable_name=Larssen, Bente Mjøen, terms_of_use=true, time_zone=Copenhagen}}",
+1543: "error": "Unable to post user to Canvas: {communication_channel={address=hans.jorgen.timm.guthe@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1023506, unique_id=hjtg@hvl.no}, user={email=hans.jorgen.timm.guthe@hvl.no, name=Hans Jørgen Timm Guthe, short_name=Hans Jørgen Timm Guthe, skip_registration=true, sortable_name=Guthe, Hans Jørgen Timm, terms_of_use=true, time_zone=Copenhagen}}",
+1871: "error": "Unable to post user to Canvas: {communication_channel={address=cecilie.hjortland.skare@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:182145, unique_id=cskj@hvl.no}, user={email=cecilie.hjortland.skare@hvl.no, name=Cecilie Hjortland Skare, short_name=Cecilie Hjortland Skare, skip_registration=true, sortable_name=Skare, Cecilie Hjortland, terms_of_use=true, time_zone=Copenhagen}}",
+2063: "error": "Unable to post user to Canvas: {communication_channel={address=irene.instenes@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:177971, unique_id=irins@hvl.no}, user={email=irene.instenes@hvl.no, name=Irene Instenes, short_name=Irene Instenes, skip_registration=true, sortable_name=Instenes, Irene, terms_of_use=true, time_zone=Copenhagen}}",
+2200: "error": "Unable to post user to Canvas: {communication_channel={address=jannicke.igland@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:870128, unique_id=jig@hvl.no}, user={email=jannicke.igland@hvl.no, name=Jannicke Igland, short_name=Jannicke Igland, skip_registration=true, sortable_name=Igland, Jannicke, terms_of_use=true, time_zone=Copenhagen}}",
+2630: "error": "Unable to post user to Canvas: {communication_channel={address=therese.ersver.sjursether@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:93221, unique_id=thesj@hvl.no}, user={email=therese.ersver.sjursether@hvl.no, name=Therese Ersvær Sjursæther, short_name=Therese Ersvær Sjursæther, skip_registration=true, sortable_name=Sjursæther, Therese Ersvær, terms_of_use=true, time_zone=Copenhagen}}",
+2912: "error": "Unable to post user to Canvas: {communication_channel={address=padmaja.barua@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:863851, unique_id=padba@hvl.no}, user={email=padmaja.barua@hvl.no, name=Padmaja Barua, short_name=Padmaja Barua, skip_registration=true, sortable_name=Barua, Padmaja, terms_of_use=true, time_zone=Copenhagen}}",
+3167: "error": "Unable to post user to Canvas: {communication_channel={address=kelvin.wade.ivankovic@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1014997, unique_id=keiva@hvl.no}, user={email=kelvin.wade.ivankovic@hvl.no, name=Kelvin Wade Ivankovic, short_name=Kelvin Wade Ivankovic, skip_registration=true, sortable_name=Ivankovic, Kelvin Wade, terms_of_use=true, time_zone=Copenhagen}}",
+3408: "error": "Unable to post user to Canvas: {communication_channel={address=igor.slazyk@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1057542, unique_id=isla@hvl.no}, user={email=igor.slazyk@hvl.no, name=Igor Slazyk, short_name=Igor Slazyk, skip_registration=true, sortable_name=Slazyk, Igor, terms_of_use=true, time_zone=Copenhagen}}",
+4112: "error": "Unable to post user to Canvas: {communication_channel={address=arild.skarsfjord.berg@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1123742, unique_id=asbe@hvl.no}, user={email=arild.skarsfjord.berg@hvl.no, name=Arild Skarsfjord Berg, short_name=Arild Skarsfjord Berg, skip_registration=true, sortable_name=Berg, Arild Skarsfjord, terms_of_use=true, time_zone=Copenhagen}}",
+4334: "error": "Unable to post user to Canvas: {communication_channel={address=marte.handal@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1012156, unique_id=hand@hvl.no}, user={email=marte.handal@hvl.no, name=Marte Handal, short_name=Marte Handal, skip_registration=true, sortable_name=Handal, Marte, terms_of_use=true, time_zone=Copenhagen}}",
+4477: "error": "Unable to post user to Canvas: {communication_channel={address=morten.rosenfeldt@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1235837, unique_id=mort@hvl.no}, user={email=morten.rosenfeldt@hvl.no, name=Morten Rosenfeldt, short_name=Morten Rosenfeldt, skip_registration=true, sortable_name=Rosenfeldt, Morten, terms_of_use=true, time_zone=Copenhagen}}",
+4629: "error": "Unable to post user to Canvas: {communication_channel={address=ann.hege.lorvik.waterhouse@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1236707, unique_id=ahlw@hvl.no}, user={email=ann.hege.lorvik.waterhouse@hvl.no, name=Ann Hege Lorvik Waterhouse, short_name=Ann Hege Lorvik Waterhouse, skip_registration=true, sortable_name=Waterhouse, Ann Hege Lorvik, terms_of_use=true, time_zone=Copenhagen}}",
+4781: "error": "Unable to post user to Canvas: {communication_channel={address=gloria.ampim@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1219035, unique_id=glam@hvl.no}, user={email=gloria.ampim@hvl.no, name=Gloria Abena Ampim, short_name=Gloria Abena Ampim, skip_registration=true, sortable_name=Ampim, Gloria Abena, terms_of_use=true, time_zone=Copenhagen}}",
+5022: "error": "Unable to post user to Canvas: {communication_channel={address=anette.hjartaker@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1152127, unique_id=anhj@hvl.no}, user={email=anette.hjartaker@hvl.no, name=Anette Hjartåker, short_name=Anette Hjartåker, skip_registration=true, sortable_name=Hjartåker, Anette, terms_of_use=true, time_zone=Copenhagen}}",
+5159: "error": "Unable to post user to Canvas: {communication_channel={address=tor.georg.jakobsen@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1123741, unique_id=tgja@hvl.no}, user={email=tor.georg.jakobsen@hvl.no, name=Tor Georg Jakobsen, short_name=Tor Georg Jakobsen, skip_registration=true, sortable_name=Jakobsen, Tor Georg, terms_of_use=true, time_zone=Copenhagen}}",
+5281: "error": "Unable to post user to Canvas: {communication_channel={address=joshua.tetteh.ocansey@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1227922, unique_id=jtoc@hvl.no}, user={email=joshua.tetteh.ocansey@hvl.no, name=Joshua Tetteh Ocansey, short_name=Joshua Tetteh Ocansey, skip_registration=true, sortable_name=Ocansey, Joshua Tetteh, terms_of_use=true, time_zone=Copenhagen}}",
+5581: "error": "Unable to post user to Canvas: {communication_channel={address=erik.laurens.jansen@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1224200, unique_id=erlaj@hvl.no}, user={email=erik.laurens.jansen@hvl.no, name=Erik Laurens Jansen, short_name=Erik Laurens Jansen, skip_registration=true, sortable_name=Jansen, Erik Laurens, terms_of_use=true, time_zone=Copenhagen}}",
+5898: "error": "Unable to post user to Canvas: {communication_channel={address=ingrid.selnes.arholm@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1311410, unique_id=isar@hvl.no}, user={email=ingrid.selnes.arholm@hvl.no, name=Ingrid Selnes Arholm, short_name=Ingrid Selnes Arholm, skip_registration=true, sortable_name=Arholm, Ingrid Selnes, terms_of_use=true, time_zone=Copenhagen}}",
+7696: "error": "Unable to post user to Canvas: {communication_channel={address=andrew.athan.mcaleavey@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1154661, unique_id=aamc@hvl.no}, user={email=andrew.athan.mcaleavey@hvl.no, name=Andrew Athan Mcaleavey, short_name=Andrew Athan Mcaleavey, skip_registration=true, sortable_name=Mcaleavey, Andrew Athan, terms_of_use=true, time_zone=Copenhagen}}",
+9077: "error": "Unable to post user to Canvas: {communication_channel={address=leiv.opstad@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:735173, unique_id=ltop@hvl.no}, user={email=leiv.opstad@hvl.no, name=Leiv Opstad, short_name=Leiv Opstad, skip_registration=true, sortable_name=Opstad, Leiv, terms_of_use=true, time_zone=Copenhagen}}",
+11114: "error": "Unable to post user to Canvas: {communication_channel={address=bente.landa.martinsen@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:181300, unique_id=blma@hvl.no}, user={email=bente.landa.martinsen@hvl.no, name=Bente Landa Martinsen, short_name=Bente Landa Martinsen, skip_registration=true, sortable_name=Martinsen, Bente Landa, terms_of_use=true, time_zone=Copenhagen}}",
+17718: "error": "Unable to post user to Canvas: {communication_channel={address=simon.sanca@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1024974, unique_id=ssan@hvl.no}, user={email=simon.sanca@hvl.no, name=Simon Sanca, short_name=Simon Sanca, skip_registration=true, sortable_name=Sanca, Simon, terms_of_use=true, time_zone=Copenhagen}}",
+18273: "error": "Unable to post user to Canvas: {communication_channel={address=mostr2218@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:931171, unique_id=mostr2218@hvl.no}, user={email=mostr2218, name=Monica Jakobsen Strand, short_name=Monica Jakobsen Strand, skip_registration=true, sortable_name=Strand, Monica Jakobsen, terms_of_use=true, time_zone=Copenhagen}}",
+24731: "error": "Unable to post user to Canvas: {communication_channel={address=inbog4407@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:520445, unique_id=inbog4407@hvl.no}, user={email=inbog4407, name=Ingrid Boge, short_name=Ingrid Boge, skip_registration=true, sortable_name=Boge, Ingrid, terms_of_use=true, time_zone=Copenhagen}}",
+
+8. Unable to update user account
+3038: 2025/06/11 10:09:37.591: INFO Processing: 0b393029-592c-4fbc-9443-081f21acf708 | Aleksander Vie
+
