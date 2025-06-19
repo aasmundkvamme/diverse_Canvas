@@ -8,6 +8,7 @@ Ulike feilmeldingar:
 6. Too many user accounts returned
 7. Unable to post user to Canvas
 8. Unable to update user account
+9. User does not have FS personløpenr
 
 
 1. Unable to delete user
@@ -48,54 +49,52 @@ Desse finn eg i prod:
 8584: 2025/06/11 10:14:02.115: INFO Processing: 08cf018b-7aa3-4fc3-98ce-8dbada9ce129 | Joanna Daria Szymczak
 
 2. Essential data missing for undefined.
-Dette er dei same personane so i feilmelding 1. Unable to delete user
+Dette er dei same personane som i feilmelding 1. Unable to delete user
 
 3. Unable to create user account
-Alle desse har konto frå før.
+Alle desse har konto frå før, så eg sjekka feltet "Ekstern" i FS (veit ikkje om det har nok å sei):
 
 Desse har "J" på ekstern i FS:
-J,Bente Mjøen Larssen
-J,Leiv Opstad
-J,Simon Sanca (men han har to påloggingar i Canvas, ein frå UiB og ein frå HVL)
-J,Monica Jakobsen Strand
+Bente Mjøen Larssen
+Leiv Opstad
+Simon Sanca (men han har to påloggingar i Canvas, ein frå UiB og ein frå HVL)
+Monica Jakobsen Strand
 
 Desse har "N" på ekstern i FS:
-N,Cecilie Hjortland Skare
-N,Marte Handal
-N,Gloria Abena Ampim
+Cecilie Hjortland Skare
+Marte Handal
+Gloria Abena Ampim
 
 Desse har "?" på ekstern i FS:
-?,Morten Rosenfeldt
-?,Hans Jørgen Timm Guthe
-?,Irene Instenes
-?,Jannicke Igland
-?,Therese Ersvær Sjursæther
-?,Padmaja Barua
-?,Kelvin Wade Ivankovic
-?,Igor Slazyk
-?,Arild Skarsfjord Berg
-?,Ann Hege Lorvik Waterhouse
-?,Anette Hjartåker
-?,Tor Georg Jakobsen
-?,Joshua Tetteh Ocansey
-?,Erik Laurens Jansen
-?,Ingrid Selnes Arholm
-?,Andrew Athan Mcaleavey
-?,Bente Landa Martinsen
+Morten Rosenfeldt
+Hans Jørgen Timm Guthe
+Irene Instenes
+Jannicke Igland
+Therese Ersvær Sjursæther
+Padmaja Barua
+Kelvin Wade Ivankovic
+Igor Slazyk
+Arild Skarsfjord Berg
+Ann Hege Lorvik Waterhouse
+Anette Hjartåker
+Tor Georg Jakobsen
+Joshua Tetteh Ocansey
+Erik Laurens Jansen
+Ingrid Selnes Arholm
+Andrew Athan Mcaleavey
+Bente Landa Martinsen
 
 
 4. Unable to change user login_id
-Usikker på kva som er problem med denne:
+Usikker på kva som er problem med desse:
 3990: 2025/06/11 10:11:11.742: INFO Canvas user_id 76381 has login_id 76793
+21908: 2025/06/11 10:20:21.328: ERROR Cannot determine login_id for user 9945
 
-Ulike opplysingar i FS og Canvas:
+Desse har ulike opplysingar i FS og Canvas:
 9741: 2025/06/11 10:14:31.808: ERROR Cannot determine login_id for user 4953
 10582: 2025/06/11 10:14:53.768: ERROR Cannot determine login_id for user 4960
 11502: 2025/06/11 10:15:20.156: ERROR Cannot determine login_id for user 4059
 15538: 2025/06/11 10:17:20.810: ERROR Cannot determine login_id for user 5153
-
-Har hen tilgang via studentkonto?
-21908: 2025/06/11 10:20:21.328: ERROR Cannot determine login_id for user 9945
 
 
 5. Unable to add admin - missing data if false: AccountID: true | CanvasID: false | RoleID: true
@@ -111,7 +110,7 @@ Denne er litt kuriøs, han har pålogging frå USN. Kan ikkje slå saman med den
 684: 2025/06/11 10:05:16.003: INFO Processing: d12074bd-8e4b-4c22-baa6-ba0d591dceff | Jan Erik Ølmheim
 
 7. Unable to post user to Canvas
-Ingen problem med desse:
+Dette er også dei same personane som i feilmelding 1. Unable to delete user
 900: "error": "Unable to post user to Canvas: {communication_channel={address=bente.mjoen.larssen@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:5325, unique_id=bml@hvl.no}, user={email=bente.mjoen.larssen@hvl.no, name=Bente Mj�en Larssen, short_name=Bente Mj�en Larssen, skip_registration=true, sortable_name=Larssen, Bente Mj�en, terms_of_use=true, time_zone=Copenhagen}}",
 1543: "error": "Unable to post user to Canvas: {communication_channel={address=hans.jorgen.timm.guthe@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:1023506, unique_id=hjtg@hvl.no}, user={email=hans.jorgen.timm.guthe@hvl.no, name=Hans J�rgen Timm Guthe, short_name=Hans J�rgen Timm Guthe, skip_registration=true, sortable_name=Guthe, Hans J�rgen Timm, terms_of_use=true, time_zone=Copenhagen}}",
 1871: "error": "Unable to post user to Canvas: {communication_channel={address=cecilie.hjortland.skare@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:182145, unique_id=cskj@hvl.no}, user={email=cecilie.hjortland.skare@hvl.no, name=Cecilie Hjortland Skare, short_name=Cecilie Hjortland Skare, skip_registration=true, sortable_name=Skare, Cecilie Hjortland, terms_of_use=true, time_zone=Copenhagen}}",
@@ -139,12 +138,12 @@ Ingen problem med desse:
 24731: "error": "Unable to post user to Canvas: {communication_channel={address=inbog4407@hvl.no, skip_confirmation=true, type=email}, enable_sis_reactivation=true, pseudonym={send_confirmation=false, sis_user_id=fs:203:520445, unique_id=inbog4407@hvl.no}, user={email=inbog4407, name=Ingrid Boge, short_name=Ingrid Boge, skip_registration=true, sortable_name=Boge, Ingrid, terms_of_use=true, time_zone=Copenhagen}}",
 
 8. Unable to update user account
-ingen problem med han heller:
+Ingen problem med han her:
 3038: 2025/06/11 10:09:37.591: INFO Processing: 0b393029-592c-4fbc-9443-081f21acf708 | Aleksander Vie
 
 
-Og så kjem 291 (?) feilmeldingar 'User does not have FS personløpenr'
-Stikkprøver viser at det ikkje er nokon problem?
+Og så kjem 294 feilmeldingar 'User does not have FS personløpenr'
+Stikkprøver viser at det ikkje er nokon problem; alle ligg fint i Canvas drift.
 1625: 2025/06/11 10:07:31.171: INFO Processing: 1dc4153e-6001-4998-92ca-dc76ab5e2808 | Cecilie Hamnes Carlsen
 3478: 2025/06/11 10:10:09.155: INFO Processing: a13736ea-49dc-46d3-b5c9-8c0d331f126f | Eline Sonita Rafoss
 3663: 2025/06/11 10:10:28.701: INFO Processing: 38797a87-f0da-4f9c-97cc-b16b8c01f8e8 | Eivind Nybakk
